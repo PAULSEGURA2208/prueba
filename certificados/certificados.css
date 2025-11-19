@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Georgia, serif;
+  background: #ffffff;
+  color: #f4f4f6;
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* exactamente 4 columnas */
+  gap: 18px;
+  max-width: 1200px; /* opcional, para centrar y limitar ancho */
+  margin: 0 auto;
+}
+
+
+.card {
+  background: #16171a;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.card:hover { transform: translateY(-4px); }
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+.card__title {
+  padding: 12px;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Modal */
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal__img {
+  max-width: 90%;
+  max-height: 70%;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+.modal__title {
+  margin-top: 16px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px; right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
+}

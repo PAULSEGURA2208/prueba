@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Pantalla de carga -->
+  <div id="loader">
+    <h1>Bienvenido</h1>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+    <p id="percentage">0%</p>
+    <p id="loading-text">Cargando...</p>
+  </div>
+
+  <div id="main-content" style="display: none;">
+    <!-- Navegación -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#acerca">Acerca</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+      <div class="intro">
+        <h1>Hola, soy Paulino</h1>
+        <div class="typing-box">
+          <span id="typed-text"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p>Soy estudiante de <strong>Ingeniería de Sistemas</strong>. Me apasiona crear, aprender y llevar mis ideas a
+          la realidad a través de la programación y creatividad.</p>
+        <button>
+          <a href="certificados/certificados.html" style="color: white; text-decoration: none;">
+          Ver mis certificaciones
+          </a>
+        </button>
+        <button>
+          <a href="https://wa.me/51972159709?text=Hola,%20nos%20queremos%20contactar%20contigo%20somos%20" target="_blank" style="color: white; text-decoration: none;">
+            Contactar
+          </a>
+        </button>
+      </div>
+      <div class="hero-img">
+        <img src="assets/perfil/paulino.jpg" alt="Foto de Paulino" />
+      </div>
+    </section>
+
+
+    <!-- Acerca de Mí -->
+    <section id="acerca" class="about-section">
+      <div class="about-img">
+        <img src="assets/perfil/paulino-about.jpg" alt="Foto de Paulino">
+      </div>
+      <div class="about-content">
+        <h2>Acerca de Mí</h2>
+        <p><strong>Paulino Segura</strong><br>
+          Estudiante de Ingeniería de Sistemas en la UCV. Apasionado por la programación, el desarrollo web y la
+          programación de videojuegos.
+        </p>
+        <h3>Educación</h3>
+        <p>Universidad César Vallejo</p>
+        <h3>Experiencia</h3>
+        <p>Asistente de Help Desk - Análisis de Ciencia de Datos y Series de Tiempo</p>
+        <h3>Habilidades Técnicas</h3>
+        <div class="skills-buttons">
+          <button>Php</button>
+          <button>Laravel</button>
+          <button>HTML</button>
+          <button>CSS</button>
+          <button>JavaScript</button>
+          <button>SQL Server</button>
+          <button>V. Basic</button>
+          <button>Unity</button>
+          <button>C#</button>
+          <button>API's</button>
+          <button>Postgre SQL</button>
+          <button>Téc. IA</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Mis Proyectos -->
+    <section id="proyectos">
+      <h2>Mis Proyectos</h2>
+      <p class="subtitulo">Algunos de los proyectos en los que he trabajado</p>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <img src="assets/perfil/penguin.jpg" alt="Penguin Academy">
+              <h3>Sistema de Venta y Gestión</h3>
+              <p>Este sistema tiene base de datos, login encriptado, registro por cargo.</p>
+              <span class="tags">Visual Studio 2022, Visual Basic, SQL Server</span>
+              <a href="https://n9.cl/c05qe" class="project-button">Ver Proyecto</a>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/otros/treejs.jpg" alt="TREE.JS">
+              <h3>TREE.JS</h3>
+              <p>Motor de renderizado 3D con JavaScript. Inspirado en Three.js.</p>
+              <span class="tags">ThreeJS, JavaScript, WebGL, 3D</span>
+              <a href="#" class="project-button">Ver Proyecto</a>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/otros/9614596.jpg" alt="Entropy Evolve">
+            <h3>Entropy Evolve</h3>
+            <p>Simulador de entropía computacional para sistemas complejos.</p>
+            <span class="tags">Python, AI, Machine Learning</span>
+            <a href="#" class="project-button">GitHub</a>
+          </div>
+
+        </div>
+    </section>
+
+
+    <!-- Servicios -->
+    <section id="servicios">
+      <h2>Mis Servicios</h2>
+      <p class="subtitulo">Lo que puedo hacer por ti</p>
+
+      <div class="services-grid">
+        <div class="service">
+          <h3>Desarrollo Web</h3>
+          <p>Aplicaciones modernas y responsivas con las últimas tecnologías.</p>
+        </div>
+        <div class="service">
+          <h3>Inteligencia Artificial</h3>
+          <p>Algoritmos de machine learning para soluciones innovadoras.</p>
+        </div>
+        <div class="service">
+          <h3>Full Stack</h3>
+          <p>Desarrollo completo desde backend a frontend, optimización y escalabilidad.</p>
+        </div>
+      </div>
+    <a href="mailto:paulsegura092021@gmail.com?subject=Contrato&body=Hola,%20deseamos%20contratarte%20somos%20la%20empresa%20" target="_blank" class="whatsapp-button">Contrátame</a>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <h3>Paulino</h3>
+        <p>Desarrollador web y creador de inteligencia Artificial. <br>
+          Creando soluciones innovadoras con el código.</p>
+      </div>
+      <div>
+        <h4>ENLACES RÁPIDOS</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>SÍGUEME</h4>
+        <div class="social-icons">
+          <a href="#"><img src="assets/otros/instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="assets/otros/gitt.png" alt="GitHub" /></a>
+        </div>
+      </div>
+      <p>© 2025 Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
